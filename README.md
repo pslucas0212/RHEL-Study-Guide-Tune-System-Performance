@@ -80,7 +80,7 @@ Let's look at the nice for the two most cpu intensive processes. We use $() subs
    1996 99.5  -2 md5sum
 ```
 
-Let's change these two processes priority (renice)
+Let's change these two processes priority (renice).  -n specifies the new nice value or priority
 ```
 # renice -n 10 1980 1996
 1980 (process ID) old priority 2, new priority 10
