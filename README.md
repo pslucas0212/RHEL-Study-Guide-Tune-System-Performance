@@ -72,7 +72,7 @@ root        1980 99.4  0.1 225340  2252 ?        RN   18:08   8:03 sha1sum /dev/
 root        1996 99.6  0.1 225340  2224 ?        R<   18:08   8:03 md5sum /dev/zero
 ```
 
-Let's look at the nice for the two most cpu intensive processes
+Let's look at the nice for the two most cpu intensive processes. We use $() substitution command to invoke a subshell run the prgrep command.
 ```
 # ps -o pid,pcpu,ni,comm $(pgrep sha1sum;pgrep md5sum)
     PID %CPU  NI COMMAND
